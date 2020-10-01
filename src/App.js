@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import Odometer from "./components/odometer/odometer";
-import sleep from "./components/sleep";
-
-
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 function App() {
   const [odo, setOdo] = useState(0);
   function addX(x) {
@@ -17,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World!</p>
+        <Header text="This is an odometer" />
         <Odometer odometer={odo} />
         <span>
           <AddButton num="10000" />
@@ -27,6 +26,7 @@ function App() {
           <AddButton num="1" />
         </span>
       </header>
+      <Footer trademark={new Date()} />
     </div>
   );
 }

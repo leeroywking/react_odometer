@@ -8,6 +8,7 @@ class Digit {
   }
 }
 
+// if you are reading this and curious about why I didn't use it I will happily tell you the tale of why I love/hate react
 class Odometer {
   constructor(digits = 5, starting = 0) {
     this.digits = digits;

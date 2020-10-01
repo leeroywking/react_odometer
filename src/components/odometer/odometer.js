@@ -75,7 +75,7 @@ import React, { useState } from "react";
 //     this.reverseOdo();
 //   }
 // }
-// const zeroPad = (num, places) => String(num).padStart(places, "0");
+const zeroPad = (num, places) => String(num).padStart(places, "0");
 
 export default (props) => {
   // const [odo, set_odo] = useState(new Odometer());
